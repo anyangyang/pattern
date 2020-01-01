@@ -5,15 +5,20 @@ import java.math.BigDecimal;
 /**
  * condiment
  */
-public class Mocha extends Beverage {
+public class Mocha extends Condiment {
+
+    public Mocha(Integer num) {
+        super(num);
+    }
 
     @Override
     String getDesciption() {
-        return "Mocha";
+        return "Mocha [ " + num + " ]";
     }
 
     @Override
     BigDecimal getCost() {
-        return new BigDecimal("1.5");
+        BigDecimal num = new BigDecimal(this.num);
+        return new BigDecimal("1.5").multiply(num);
     }
 }

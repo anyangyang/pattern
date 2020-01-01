@@ -9,9 +9,9 @@ import java.util.List;
  */
 public abstract class Beverage {
 
-    List<Beverage> condiments;
+    List<Condiment> condiments;
 
-    public void addCondiment(Beverage condiment) {
+    public void addCondiment(Condiment condiment) {
         if (condiment == null) {
             return;
         }
@@ -29,7 +29,7 @@ public abstract class Beverage {
         }
 
         BigDecimal cost = BigDecimal.ZERO;
-        for (Beverage condiment : condiments) {
+        for (Condiment condiment : condiments) {
             cost = cost.add(condiment.getCost());
         }
 
@@ -42,7 +42,7 @@ public abstract class Beverage {
         }
 
         StringBuilder sb = new StringBuilder();
-        for (Beverage condiment : condiments) {
+        for (Condiment condiment : condiments) {
             sb.append(",").append(condiment.getDesciption());
         }
 

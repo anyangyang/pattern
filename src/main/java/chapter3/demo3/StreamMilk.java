@@ -8,17 +8,18 @@ import java.math.BigDecimal;
  */
 public class StreamMilk extends CondimentDecorator {
 
-    public StreamMilk(Beverage beverage) {
-        this.beverage = beverage;
+    public StreamMilk(Beverage beverage, Integer num) {
+        super(beverage, num);
     }
 
     @Override
     String getDesciption() {
-        return this.beverage.getDesciption() + ",StreamMilk";
+        return this.beverage.getDesciption() + ",StreamMilk [ " + this.num + " ]";
     }
 
     @Override
     BigDecimal getCost() {
-        return new BigDecimal("0.8").add(this.beverage.getCost());
+        BigDecimal num = new BigDecimal(this.num);
+        return new BigDecimal("0.8").multiply(num).add(this.beverage.getCost());
     }
 }

@@ -5,15 +5,20 @@ import java.math.BigDecimal;
 /**
  * condiment
  */
-public class StreamMilk extends Beverage {
+public class StreamMilk extends Condiment {
+
+    public StreamMilk(Integer num) {
+        super(num);
+    }
 
     @Override
     String getDesciption() {
-        return "StreamMilk";
+        return "StreamMilk [ " + num + " ]";
     }
 
     @Override
     BigDecimal getCost() {
-        return new BigDecimal("0.8");
+        BigDecimal num = new BigDecimal(this.num);
+        return new BigDecimal("0.8").multiply(num);
     }
 }

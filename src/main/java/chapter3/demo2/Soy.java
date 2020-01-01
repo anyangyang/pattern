@@ -5,14 +5,20 @@ import java.math.BigDecimal;
 /**
  * condiment: 酱油
  */
-public class Soy extends Beverage {
+public class Soy extends Condiment {
+
+    public Soy(Integer num) {
+        super(num);
+    }
+
     @Override
     String getDesciption() {
-        return "Soy";
+        return "Soy [ " + num + " ]";
     }
 
     @Override
     BigDecimal getCost() {
-        return new BigDecimal("0.5");
+        BigDecimal num = new BigDecimal(this.num);
+        return new BigDecimal("0.5").multiply(num);
     }
 }
