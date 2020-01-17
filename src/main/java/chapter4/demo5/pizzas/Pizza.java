@@ -26,7 +26,7 @@ public abstract class Pizza {
     }
 
     public void box() {
-        System.out.println("Place pizza into offical pizza store box");
+        System.out.println("Place pizza into offical pizza store box \n");
     }
 
     public String getName() {

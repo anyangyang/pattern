@@ -15,7 +15,7 @@ public class ChicagoPizzaStore extends PizzaStore {
     }
 
     @Override
-    Pizza createPizza(String type) {
+    public Pizza createPizza(String type) {
         if("cheese".equals(type)) {       // 奶酪
             return new ChicagoStyleCheesePizza(ingredientFactory);
         }

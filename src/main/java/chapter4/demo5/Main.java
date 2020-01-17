@@ -1,7 +1,7 @@
 package chapter4.demo5;
 
-import chapter4.demo4.NYPizzaStore;
 import chapter4.demo5.pizzaStore.ChicagoPizzaStore;
+import chapter4.demo5.pizzaStore.NYPizzaStore;
 
 public class Main {
 
@@ -15,6 +15,6 @@ public class Main {
         nyPizzaStore.orderPizza("cheese");
         nyPizzaStore.orderPizza("clam");
         nyPizzaStore.orderPizza("veggie");
-        nyPizzaStore.orderPizza("pepperoni");
+//        nyPizzaStore.orderPizza("pepperoni");
     }
 }
