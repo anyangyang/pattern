@@ -10,11 +10,13 @@ public class Main {
         chicagoStore.orderPizza("cheese");
         chicagoStore.orderPizza("clam");
         chicagoStore.orderPizza("veggie");
+        chicagoStore.orderPizza("pepperoni");
 
         NYPizzaStore nyPizzaStore = new NYPizzaStore();
         nyPizzaStore.orderPizza("cheese");
         nyPizzaStore.orderPizza("clam");
         nyPizzaStore.orderPizza("veggie");
-//        nyPizzaStore.orderPizza("pepperoni");
+        nyPizzaStore.orderPizza("pepperoni");
+
     }
 }

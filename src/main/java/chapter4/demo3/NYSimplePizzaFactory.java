@@ -9,7 +9,6 @@ import chapter4.demo3.pizzas.Pizza;
 public class NYSimplePizzaFactory extends SimplePizzaFactory{
 
     public Pizza createPizza(String type) {
-        Pizza pizza = null;
         if("cheese".equals(type)) {       // 奶酪
             return new NYStyleCheesePizza();
         }

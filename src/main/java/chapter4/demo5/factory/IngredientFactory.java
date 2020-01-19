@@ -20,6 +20,4 @@ public abstract class IngredientFactory {
     public abstract Cheese createCheese();
 
     public abstract Sauce createSauce();
-
-
 }

@@ -5,7 +5,6 @@ import chapter4.demo2.pizzas.*;
 public class SimplePizzaFactory {
 
     public Pizza createPizza(String type) {
-        Pizza pizza = null;
         if("cheese".equals(type)) {       // 奶酪
             return new CheesePizza();
         }
