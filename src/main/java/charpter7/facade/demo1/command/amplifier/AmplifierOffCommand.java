@@ -13,7 +13,5 @@ public class AmplifierOffCommand implements Command{
     }
 
     @Override
-    public void execute(CommandParam param) {
-        amplifier.off();
-    }
+    public void execute(CommandParam param) { amplifier.off(); }
 }

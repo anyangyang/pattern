@@ -16,6 +16,4 @@ public class LightOffCommand implements Command{
     public void execute(CommandParam param) {
          light.off();
     }
-
-
 }

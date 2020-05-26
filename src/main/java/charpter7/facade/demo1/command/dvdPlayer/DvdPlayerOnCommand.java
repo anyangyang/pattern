@@ -16,5 +16,4 @@ public class DvdPlayerOnCommand implements Command{
     public void execute(CommandParam param) {
         dvdPlayer.on();
     }
-
 }

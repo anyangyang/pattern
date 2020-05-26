@@ -13,7 +13,5 @@ public class ScreenDownCommand implements Command{
     }
 
     @Override
-    public void execute(CommandParam param) {
-       screen.down();
-    }
+    public void execute(CommandParam param) { screen.down(); }
 }
