@@ -18,7 +18,6 @@ public class HomeTheatrePlayMoviceCommand implements Command{
             throw new RuntimeException("movice is null");
         }
         // TODO check arguments
-
         homeTheatre.watchMovice(param);
     }
 }

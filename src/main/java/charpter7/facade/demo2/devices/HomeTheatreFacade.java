@@ -59,6 +59,4 @@ public class HomeTheatreFacade {
         popcornPopper.off();
 
     }
-
-
 }

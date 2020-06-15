@@ -19,10 +19,10 @@ public class Main {
         param.volume = 40;
         param.movice = "逃学威龙";
 
-        // 开启爆米花机
+        // 播放电影
         controller.command("homeTheatre_play", param);
         System.out.println("电影 [ " + param.movice + " ] 播放完成");
-        // 开始关闭设置
+        // 播放完成关闭
         controller.command("homeTheatre_end", param);
 
     }

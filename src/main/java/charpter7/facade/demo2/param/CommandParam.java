@@ -7,6 +7,4 @@ public class CommandParam {
     public Integer volume;  // 扬声器音量
     public String movice;
     public Integer dim;   // 灯光暗度
-
-
 }
