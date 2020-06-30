@@ -13,20 +13,18 @@ public class GumballMechine {
     public static final Integer GUNBALL_SOLD = 2;    // 口香糖弹出中
     public static final Integer SOLD_OUT = 3;        // 机器中口香糖库存不足
 
+    // 状态描述
     public static final Map<Integer, String> statusMap = new HashMap<>();
-
     static {
         statusMap.put(0, "NO_QUARTER");
         statusMap.put(1, "HAS_QUARTER");
         statusMap.put(2, "GUNBALL_SOLD");
         statusMap.put(3, "SOLD_OUT");
     }
-
-    private Integer count;    // 剩余口香糖数量
-
-    private Integer state = SOLD_OUT;   // 默认已经售卖完
-
-
+    // 剩余口香糖数量
+    private Integer count;
+    // 默认已经售卖完
+    private Integer state = SOLD_OUT;
 
     public GumballMechine(Integer count) {
         if (count == null) {
@@ -34,10 +32,9 @@ public class GumballMechine {
         }
         this.count = count;
         if(count > 0) {
-            this.state = NO_QUARTER;    // 如果当前机器中口香糖数量大于
+            this.state = NO_QUARTER;    // 如果当前机器中口香糖数量大于0。设置为初始化状态，否则默认为已经售卖完成的状态
         }
     }
-
     // 投入硬币
     public void insertQuarter() {
         if (this.state.equals(NO_QUARTER)) {

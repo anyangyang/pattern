@@ -9,7 +9,7 @@ public class Main {
         // print current state of the gumballMechine
         System.out.println(gumballMechine);
 
-        // first test
+        // first unit test
         System.out.println();
         gumballMechine.insertQuarter();
         gumballMechine.turnCrank();
