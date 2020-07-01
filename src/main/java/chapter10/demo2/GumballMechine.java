@@ -1,8 +1,5 @@
 package chapter10.demo2;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class GumballMechine {
 
     public State NO_QUARTER;  // 初始状态
