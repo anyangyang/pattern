@@ -14,18 +14,4 @@ public class Coffee extends CoffineBeverage {
         System.out.println("add sugar and milk");
     }
 
-    @Override
-    public Boolean customerWantCondiment() {
-        String customerInput = getCustomerInput();
-        if("Y".equalsIgnoreCase(customerInput)) {
-            return true;
-        }
-        return false;
-    }
-
-    private String getCustomerInput() {
-        System.out.println("Do you want comdiment? (Y/N)");
-        Scanner scanner = new Scanner(System.in);
-        return scanner.next();
-    }
 }
